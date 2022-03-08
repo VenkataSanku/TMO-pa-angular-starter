@@ -1,10 +1,9 @@
 <header>
   <h1>My Recipes</h1>
-  
 </header>
 
 <br>
-<span *ngIf="message">No recipes in the list</span>
+<span *ngIf="message">There are no recipes to list</span>
 <br>
 <br>
 
@@ -24,7 +23,7 @@
     </div>
     <br>
     <div class="form-group">
-      <label for="pwd">recipe-instructions:</label>
+      <label for="pwd">recipe-instructions</label>
       <br>
       <textarea type="text" class="form-control" placeholder="Enter description" formControlName="description" id="description"></textarea>
 
