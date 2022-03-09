@@ -8,7 +8,7 @@
 <br>
 
 <div>
-  <button role="button" type="button" class="btn btn-primary" (click)="addRecipes()">Add Recipe
+  <button role="button" type="submit" class="btn btn-primary" (click)="addRecipes()">Add Recipe
 
   </button>
 </div>
@@ -26,13 +26,15 @@
       <label for="pwd">recipe-instructions</label>
       <br>
       <textarea type="text" class="form-control" placeholder="" formControlName="description" id="description"></textarea>
-
+      
     </div>
+    <br>
+    <button type="submit" class="btn btn-primary" (click)="onSubmit()">Submit</button>
     <br>
     <span *ngIf="hadleError">{{hadleError}}</span>
    </form>
    <br>
-    <button type="submit" class="btn btn-primary" (click)="onSubmit()">Submit</button>
+    
 </div>
 
 <div>
