@@ -23,8 +23,8 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     this.restarentForm = this.fb.group(
       {
-        item: new FormControl('recipe-name'),
-        description: new FormControl('recipe-instructions'),
+        item: new FormControl(''),
+        description: new FormControl(''),
     });
     }
     onSubmit() {
