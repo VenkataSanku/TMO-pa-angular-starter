@@ -7,11 +7,6 @@
 <br>
 <br>
 
-<div>
-  <button role="button" type="submit" class="btn btn-primary" (click)="addRecipes()">Add Recipe
-
-  </button>
-</div>
 <br>
 
 <div *ngIf="showForm">
@@ -45,7 +40,12 @@
   <br>
 
   <div>
-    <table class="table" *ngIf="showlist">
+    
+<div *ngIf="showlist">
+  <button role="button" type="submit" class="btn btn-primary" (click)="addRecipes()">Add Recipe
+
+  </button> 
+    <table class="table" >
       <thead>
         <tr>
           <th scope="col">recipe-name</th>
@@ -56,6 +56,10 @@
       </thead>
       <tbody>
         <tr *ngFor="let displayList of displayList">
-          <td *ngIf="displayList.item">{{displayList.item}}</td>
+          <td *ngIf="displayList.item" role="listitem">{{displayList.item}}</td>
           <td *ngIf="displayList.description">{{displayList.description}}</td>
+        </tr></tbody></table>
+</div>
+  </div>
+  
       
