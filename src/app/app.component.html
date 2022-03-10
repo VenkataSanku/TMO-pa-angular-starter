@@ -6,7 +6,9 @@
 <span *ngIf="message">There are no recipes to list</span>
 <br>
 <br>
+<button *ngIf="!showForm" role="button" type="submit" class="btn btn-primary" (click)="addRecipes()">Add Recipe
 
+</button> 
 <br>
 
 <div *ngIf="showForm">
@@ -42,9 +44,7 @@
   <div>
     
 <div *ngIf="showlist">
-  <button role="button" type="submit" class="btn btn-primary" (click)="addRecipes()">Add Recipe
-
-  </button> 
+ 
     <table class="table" >
       <thead>
         <tr>
