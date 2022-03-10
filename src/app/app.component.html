@@ -17,15 +17,15 @@
 <div *ngIf="showForm">
   <form [formGroup]="restarentForm">
     <div class="form-group">
-      <!-- <label>recipe-name</label> -->
+      <label for="recipe-name">recipe-name</label>
       <br>
-      <input type="text" role="textbox" class="form-control" formControlName="item" placeholder="" id="recipename" name="recipe-name">recipe-name
+      <input type="text" role="textbox" class="form-control" formControlName="item" placeholder="" id="recipename" name="recipe-name">
     </div>
     <br>
     <div class="form-group">
-      <!-- <label >recipe-instructions</label> -->
+     <label for="recipe-instructions" >recipe-instructions</label>
       <br>
-      <input type="text"  role="textbox" class="form-control" placeholder="" formControlName="description" id="recipe-instructions" name="recipe-instructions">recipe-instructions
+      <input type="text"  role="textbox" class="form-control" placeholder="" formControlName="description" id="recipe-instructions" name="recipe-instructions">
       
     </div>
     <br>
